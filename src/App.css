@@ -1,38 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+.title {
+  z-index: 1;
+  color: #fff;
+}
+
 .App {
-  text-align: center;
+  background-color: rgb(8, 194, 45);
+  font-family: "Neucha", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.input {
+  position: relative;
+  width: 50%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input__box {
+  width: 100%;
+  padding: 0.7em 1.5em;
+  font-size: 1.2em;
+  border-radius: 30px;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input__box:focus {
+  box-shadow: 0 0 10px 1000px rgb(4, 113, 26);
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  background-color: rgb(8, 194, 45);
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.7em;
+  margin: 0.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.44);
+}
+
+.btn:hover {
+  background-color: rgb(8, 220, 50);
+}
+
+.btn:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.44);
 }
