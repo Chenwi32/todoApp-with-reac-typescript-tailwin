@@ -2,11 +2,12 @@ import React, { useState } from "react";
 
 import "./App.css";
 import InputField from "./components/InputField";
+import { Todo } from "./module";
 
 const App: React.FC = () => {
 
-const [todo, setTodo] = useState<string >('')
-
+  const [todo, setTodo] = useState<string>('')
+  const [todos, setTodos] = useState <Todo[]>([])
   return (
     <div className="  App h-screen">
       <header className="App-header container mx-auto flex justify-center">
